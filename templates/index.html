@@ -1,0 +1,366 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+
+<head>
+    <title>Get to meet Gideon Anyalewechi </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Template by CocoBasic" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+    <meta name="author" content="CocoBasic" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'custom.css' %}" />
+
+    <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>            
+                <script src="js/respond.min.js"></script>                   
+        <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Preloader Gif -->
+    <div class="doc-loader">
+        <img src="{% static 'images/preloader.gif' %}" alt="Loading">
+    </div>
+
+    <div id="content" class="site-content">
+
+        <div class="content-left">
+            <div class="content-left-wrapper">
+                <header>
+                    <div class="toggle-holder">
+                        <div id="toggle">
+                            <div class="menu-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-pagination">
+                        <div class="current-num">
+                            <span>01</span>
+                        </div>
+                        <div class="pagination-div"></div>
+                        <div class="total-pages-num"></div>
+                    </div>
+
+                    <div class="menu-holder">
+                        <div class="menu-wrapper relative">
+                            <nav id="header-main-menu">
+                                <ul class="main-menu sm sm-clean">
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#resume">Resume</a></li>
+                                    <li><a href="#skills">Skills</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="my-info-wrapper">
+                        <div class="my-info">
+                            <p class="my-info-title">NAME</p>
+                            <p class="my-info-content">{{ name }}</p>
+                        </div>
+
+                        <div class="my-info">
+                            <p class="my-info-title">ROLE</p>
+                            <p class="my-info-content">{{ role }}</p>
+                        </div>
+
+                        <div class="my-info">
+                            <p class="my-info-title">EMAIL</p>
+                            <p class="my-info-content">{{ email }}</p>
+                        </div>
+
+                        <div class="my-info">
+                            <p class="my-info-title">PHONE</p>
+                            <p class="my-info-content">{{ phone }}</p>
+                        </div>
+
+                        <a target="_blank" href="{{ zuri_url }}">
+                            <img class="my-info-signature" src="{% static 'images/zuri-logo-full.svg' %}" alt="" />
+                        </a>
+
+                    </div>
+
+                    <div class="big-num">
+                        <div class="current-big-num">01</div>
+                        <div class="icon-scroll"></div>
+                    </div>
+                </header>
+            </div>
+
+        </div>
+
+        <div class="content-right">
+
+            {% if messages %}
+
+            <div class="message__wrapper">
+
+                {% for message in messages %}
+                <div class="message__box msg-{{message.tags}}" role="alert">
+                    {{message}}
+                </div>
+                {% endfor %}
+
+            </div>
+
+            {% endif %}
+
+            <div class="content-right-wrapper">
+
+                <!-- Home Section -->
+                <div id="home" class="section full-width-section">
+                    <div class="section-wrapper block">
+                        <div class="home-left-part">
+                            <p class="site-des">Hello. My name is</p>
+                            <h1 class="entry-title">{{ name }}</h1>
+                            <p class="site-info">
+                                A backend and mobile software engineer with a drive for learning. Advanced working
+                                experience with django for building web applications. Previous working
+                                experience with Java and JavaFX for desktop
+                                applications. Competence with linux administration. Basic knowledge of flutter. On an
+                                upward path.
+                            </p>
+
+                            <div class="social-links">
+                                <a target="_blank"
+                                    href="https://www.linkedin.com/in/gideon-anyalewechi-b94938127">LINKEDIN</a>
+                                <a target="_blank" href="https://twitter.com/get_giddy">TWITTER</a>
+                                <a target="_blank" href="https://github.com/getgiddy">GITHUB</a>
+                            </div>
+
+                        </div>
+                        <div class="home-right-part">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resume Section -->
+                <div id="resume" class="section">
+                    <div class="section-wrapper block">
+                        <div class="content-1300">
+                            <div class="row">
+                                <div class="one-half width-55">
+                                    <h2 class="entry-title section-title">Experience</h2>
+
+                                    <ul class="timeline-holder">
+                                        <li class="timeline-event">
+                                            <span class="timeline-circle"></span>
+                                            <div class="timeline-event-content">
+                                                <b>Iykelin Hub Solutions(Full-stack and Mobile Engineer)</b>
+                                                </p> Built the
+                                                Rest API backend for a robust University Computer
+                                                Based Test (CBT) system using Python/Django and Django
+                                                Rest Framework.
+                                                <p>
+                                                <p>
+                                                    Built an eCommerce system for a client.
+                                                </p>
+                                                <p>
+                                                    Developing a
+                                                    mobile application using Dart/Flutter.
+                                                </p>
+                                            </div>
+                                            <div class="timeline-event-date">Now</div>
+                                        </li>
+
+                                        <li class="timeline-event">
+                                            <span class="timeline-circle"></span>
+                                            <div class="timeline-event-content">
+                                                <b>Rapport Technologies (Software Developer - Java)</b>
+                                                <p>
+                                                    Formed part of a six-man team of diverse skillets.
+                                                </p>
+                                                <p>
+                                                    Created a RESTful API for development.
+                                                </p>
+                                                <p>
+                                                    Consumed RESTful API endpoints for data manipulation and
+                                                    usage.
+                                                </p>
+                                                <p>
+                                                    Incorporated client-side embedded database engines (Apache
+                                                    Derby) to reduce the effect of service requests on user
+                                                    experience.
+                                                </p>
+                                                <p>
+                                                    Created effective user interfaces using JavaFX.
+                                                </p>
+                                            </div>
+                                            <div class="timeline-event-date">2019</div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="one-half width-40 last">
+                                    <h2 class="entry-title section-title">Cover letter</h2>
+                                    <p class="section-info">
+                                        Passionate about learning and growing my ability to provide solutions through
+                                        tech for problems.
+                                    </p>
+                                    <p>
+                                        I believe that through my technical prowess and with the right people, I can
+                                        make global impact. Currently, I am undergoing the HNG internship organized by
+                                        <a href="https://zuri.team">the Zuri team.</a> I wish to continue learning and
+                                        growing as a person and as a developer.
+                                    </p>
+
+                                    <a href="{{ zuri_url }}">
+                                        <img class="my-signature" src="{% static 'images/zuri-logo-full.svg' %}" alt="">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div id="skills" class="section">
+                    <div class="section-wrapper block">
+                        <div class="content-1300">
+                            <div class="row m-bottom-60">
+                                <h2 class="entry-title section-title">Skills</h2>
+
+                                <div class="skill-circle-holder">
+                                    <div class="skill-circle">
+                                        <div class="skill-circle-wrapper relative" data-value="0.82"
+                                            data-color="#f37b83" data-empty-color="#554247">
+                                            <span class="skill-circle-num"></span>
+                                        </div>
+                                        <p class="skill-circle-text">Python/Django</p>
+                                    </div>
+
+                                    <div class="skill-circle">
+                                        <div class="skill-circle-wrapper relative" data-value="0.45"
+                                            data-color="#f37b83" data-empty-color="#554247">
+                                            <span class="skill-circle-num"></span>
+                                        </div>
+                                        <p class="skill-circle-text">Flutter</p>
+                                    </div>
+
+                                    <div class="skill-circle">
+                                        <div class="skill-circle-wrapper relative" data-value="0.40"
+                                            data-color="#f37b83" data-empty-color="#554247">
+                                            <span class="skill-circle-num"></span>
+                                        </div>
+                                        <p class="skill-circle-text">Linux Administration</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="one-half">
+                                    <div class="skills-holder">
+                                        <div class="skill-holder">
+                                            <div class="skill-text">
+                                                <div class="skill">
+                                                    <div class="skill-fill" data-fill="75%"></div>
+                                                </div>
+                                                <span>Logic</span>
+                                            </div>
+                                            <div class="skill-percent">75%</div>
+                                        </div>
+
+                                        <div class="skill-holder">
+                                            <div class="skill-text">
+                                                <div class="skill">
+                                                    <div class="skill-fill" data-fill="63%"></div>
+                                                </div>
+                                                <span>Organizing</span>
+                                            </div>
+                                            <div class="skill-percent">63%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="one-half last">
+                                    <div class="skills-holder sec-skills-holder">
+                                        <div class="skill-holder">
+                                            <div class="skill-text">
+                                                <div class="skill">
+                                                    <div class="skill-fill" data-fill="55%"></div>
+                                                </div>
+                                                <span>Teamwork</span>
+                                            </div>
+                                            <div class="skill-percent">55%</div>
+                                        </div>
+
+                                        <div class="skill-holder">
+                                            <div class="skill-text">
+                                                <div class="skill">
+                                                    <div class="skill-fill" data-fill="53%"></div>
+                                                </div>
+                                                <span>Communication</span>
+                                            </div>
+                                            <div class="skill-percent">53%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div id="contact" class="section">
+                    <div class="section-wrapper block">
+                        <div class="content-1300">
+                            <div class="row">
+                                <h2 class="entry-title section-title">Get in touch</h2>
+                                <div class="one-half width-40">
+
+                                    <p class="section-info">
+                                        Open to discussing ideas and proffering solutions.
+                                    </p>
+                                    <p>
+                                        <b>ADDRESS:</b> {{ address }} <br>
+                                        <b>EMAIL:</b> {{ email }} <br>
+                                        <b>Phone:</b> {{ phone }} <br>
+                                    </p>
+                                </div>
+
+                                <div class="one-half width-55 last">
+                                    <form action="{% url 'send_email' %}" method="post">
+                                        {% csrf_token %}
+                                        <div class="contact-form">
+                                            {{ form.as_p }}
+                                            <p class="contact-submit-holder">
+                                                <input type="submit" value="SEND">
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Load JavaScript-->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.js' %}"></script>
+    <script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.js' %}"></script>
+    <script src="{% static 'js/jquery.smartmenus.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/circle-progress.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+
+</html>
